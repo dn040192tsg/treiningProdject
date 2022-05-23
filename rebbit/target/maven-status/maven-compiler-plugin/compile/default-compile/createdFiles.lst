@@ -1,0 +1,8 @@
+org/example/config/consumers/TrainingConsumerConfig.class
+META-INF/spring-configuration-metadata.json
+org/example/RabbitWorkerApplication.class
+org/example/config/RabbitConfig.class
+org/example/config/RabbitMQConsumerConfigUtils.class
+org/example/consumers/TrainingConsumer.class
+org/example/service/RabbitService.class
+org/example/controller/RabbitController.class

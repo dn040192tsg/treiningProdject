@@ -1,0 +1,68 @@
+{
+  "groups": [
+    {
+      "name": "rabbit",
+      "type": "org.example.config.RabbitConfig",
+      "sourceType": "org.example.config.RabbitConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rabbit.exchange-name",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.host",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.key-store-location",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.key-store-pass",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.needed-ssl",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.example.config.RabbitConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "rabbit.password",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.port",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.trust-store-location",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.trust-store-pass",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.username",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    },
+    {
+      "name": "rabbit.v-host",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.RabbitConfig"
+    }
+  ],
+  "hints": []
+}

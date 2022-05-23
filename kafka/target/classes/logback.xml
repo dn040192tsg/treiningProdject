@@ -1,0 +1,106 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="TIMING_CONSUMER_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/consumers/TimingConsumer.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>TimingConsumer.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %c{1} [%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="GROUPS_HISTORY_CONSUMER_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/consumers/GroupsHistoryConsumer.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>GroupsHistory.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %c{1} [%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="PARAMS_HISTORY_CONSUMER_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/consumers/ParamsHistoryConsumer.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>ParamsHistory.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %c{1} [%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="REQUEST_HANDLER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/ProducerHandler.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>TimingConsumer.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %c{1} [%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <logger name="com.pb.consensus.kafkaworker.consumer.impl.TimingConsumer" level="info" additivity="false">
+        <appender-ref ref="TIMING_CONSUMER_FILE"/>
+    </logger>
+
+    <logger name="com.pb.consensus.kafkaworker.consumer.impl.GroupsHistoryConsumer" level="info" additivity="false">
+        <appender-ref ref="GROUPS_HISTORY_CONSUMER_FILE"/>
+    </logger>
+
+    <logger name="com.pb.consensus.kafkaworker.consumer.impl.ParamsHistoryConsumer" level="info" additivity="false">
+        <appender-ref ref="PARAMS_HISTORY_CONSUMER_FILE"/>
+    </logger>
+
+    <logger name="com.pb.consensus.kafkaworker.handler.impl" level="info" additivity="false">
+        <appender-ref ref="REQUEST_HANDLER"/>
+    </logger>
+
+</configuration>

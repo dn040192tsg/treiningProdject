@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "name": "kafka.auth",
+      "type": "org.example.config.KafkaAuthConfig",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "kafka.auth.algorithm",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig",
+      "defaultValue": ""
+    },
+    {
+      "name": "kafka.auth.key-pass",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    },
+    {
+      "name": "kafka.auth.key-store-location",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    },
+    {
+      "name": "kafka.auth.key-store-pass",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    },
+    {
+      "name": "kafka.auth.protocol",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    },
+    {
+      "name": "kafka.auth.trust-store-location",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    },
+    {
+      "name": "kafka.auth.trust-store-pass",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.KafkaAuthConfig"
+    },
+    {
+      "name": "kafka.auth.unable-auth",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.example.config.KafkaAuthConfig",
+      "defaultValue": false
+    }
+  ],
+  "hints": []
+}

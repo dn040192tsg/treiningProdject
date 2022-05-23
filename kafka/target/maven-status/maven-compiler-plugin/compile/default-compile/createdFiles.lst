@@ -1,0 +1,7 @@
+META-INF/spring-configuration-metadata.json
+org/example/config/KafkaConsumerConfig.class
+org/example/controller/KafkaController.class
+org/example/KafkaWorkerApplication.class
+org/example/service/KafkaService.class
+org/example/config/KafkaAuthConfig.class
+org/example/config/KafkaProducerConfig.class
