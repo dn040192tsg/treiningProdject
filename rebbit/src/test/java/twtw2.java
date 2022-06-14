@@ -2,6 +2,6 @@ import org.springframework.boot.security.reactive.ApplicationContextServerWebExc
 
 public class twtw2 {
     public static void main(String[] args) {
-
+        System.out.println();
     }
 }
